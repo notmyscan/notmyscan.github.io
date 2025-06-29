@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NotMyScan</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <script>
-    function toggleSidebar() {
-      document.querySelector(".sidebar").classList.toggle("active");
-    }
-  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
   <div class="menu-icon" onclick="toggleSidebar()">☰</div>
-  <div class="sidebar">
+
+  <div class="sidebar" id="sidebar">
     <div class="profile">
-      <img src="assets/profile.jpg" alt="Profile" />
+      <img src="assets/profile.jpg" alt="Profile">
     </div>
     <nav>
-      <a href="#"><img src="assets/home.svg" class="icon"> Home</a>
-      <a href="#"><img src="assets/comic.svg" class="icon"> Comics</a>
-      <a href="#"><img src="assets/bookmark.svg" class="icon"> Bookmarks</a>
-      <a href="#"><img src="assets/recruit.svg" class="icon"> Recruitment</a>
-      <a href="#"><img src="assets/login.svg" class="icon"> Login</a>
+      <a href="#"><img src="assets/home.svg" alt="Home" class="icon"> Home</a>
+      <a href="#"><img src="assets/comic.svg" alt="Comics" class="icon"> Comics</a>
+      <a href="#"><img src="assets/bookmark.svg" alt="Bookmarks" class="icon"> Bookmarks</a>
+      <a href="#"><img src="assets/recruit.svg" alt="Recruit" class="icon"> Recruitment</a>
+      <a href="#"><img src="assets/login.svg" alt="Login" class="icon"> Login</a>
     </nav>
   </div>
 
-  <!-- Header -->
-  <div class="top-header">
+  <header>
     <h1>NotMyScan</h1>
-  </div>
+  </header>
 
-  <!-- Section -->
-  <div class="section-title">
-    <h2>Popular Today</h2>
-  </div>
+  <section>
+    <h2 class="section-title">Popular Today</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assets/solo.jpg" alt="Solo Leveling">
+        <p>Solo Leveling</p>
+      </div>
+      <div class="card">
+        <img src="assets/orv.jpg" alt="Omniscient Reader">
+        <p>Omniscient Reader Viewpoint</p>
+      </div>
+      <div class="card">
+        <img src="assets/estate.jpg" alt="Estate Developer">
+        <p>The Greatest Estate Developer</p>
+      </div>
+      <div class="card">
+        <img src="assets/coming.jpg" alt="Coming Soon">
+        <p>Coming Soon</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="card-grid">
-    <div class="card">
-      <img src="assets/solo.jpg" alt="Solo Leveling" />
-      <p>Solo Leveling</p>
-    </div>
-    <div class="card">
-      <img src="assets/orv.jpg" alt="Omniscient Reader" />
-      <p>Omniscient Reader Viewpoint</p>
-    </div>
-    <div class="card">
-      <img src="assets/estate.jpg" alt="Estate Developer" />
-      <p>The Greatest Estate Developer</p>
-    </div>
-    <div class="card">
-      <img src="assets/coming.jpg" alt="Coming Soon" />
-      <p>Coming Soon</p>
-    </div>
-  </div>
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
