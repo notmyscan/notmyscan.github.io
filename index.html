@@ -3,65 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScans – Read Popular Korean Manhwa Free</title>
-  <meta name="description" content="Read Korean Manhwa like Solo Leveling, ORV, and more – Free and mobile-friendly.">
-  <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-
-  <!-- Hamburger menu for mobile -->
-  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
-
-  <!-- Sidebar -->
-  <aside class="sidebar" id="sidebar">
-    <div class="profile">
-      <img src="assets/images/profile.jpg" alt="Profile" />
-    </div>
-    <nav>
-      <a href="#">🏠 Home</a>
-      <a href="#">📚 Comics</a>
-      <a href="#">🔖 Bookmarks</a>
-      <a href="#">🔍 Search</a>
-      <a href="#">🔐 Login</a>
-    </nav>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="content">
-    <section class="section-title">
-      <h1>Popular Today</h1>
-    </section>
-
-    <div class="card-grid">
-      <div class="card">
-        <img src="assets/images/solo.jpg" alt="Solo Leveling" />
-        <p>Solo Leveling</p>
-      </div>
-      <div class="card">
-        <img src="assets/images/orv.jpg" alt="ORV" />
-        <p>Omniscient Reader's Viewpoint</p>
-      </div>
-      <div class="card">
-        <img src="assets/images/estate.jpg" alt="Estate Developer" />
-        <p>The Greatest Estate Developer</p>
-      </div>
-
-      <!-- Extra cards -->
-      <div class="card"><img src="assets/images/solo.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/orv.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/estate.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/solo.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/orv.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/estate.jpg" /><p>Coming Soon</p></div>
-      <div class="card"><img src="assets/images/solo.jpg" /><p>Coming Soon</p></div>
-    </div>
-  </main>
-
+  <title>NotMyScan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <script>
     function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("active");
+      document.querySelector(".sidebar").classList.toggle("active");
     }
   </script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  <div class="sidebar">
+    <div class="profile">
+      <img src="assets/profile.jpg" alt="Profile" />
+    </div>
+    <nav>
+      <a href="#"><img src="assets/home.svg" class="icon"> Home</a>
+      <a href="#"><img src="assets/comic.svg" class="icon"> Comics</a>
+      <a href="#"><img src="assets/bookmark.svg" class="icon"> Bookmarks</a>
+      <a href="#"><img src="assets/recruit.svg" class="icon"> Recruitment</a>
+      <a href="#"><img src="assets/login.svg" class="icon"> Login</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <div class="top-header">
+    <h1>NotMyScan</h1>
+  </div>
+
+  <!-- Section -->
+  <div class="section-title">
+    <h2>Popular Today</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="assets/solo.jpg" alt="Solo Leveling" />
+      <p>Solo Leveling</p>
+    </div>
+    <div class="card">
+      <img src="assets/orv.jpg" alt="Omniscient Reader" />
+      <p>Omniscient Reader Viewpoint</p>
+    </div>
+    <div class="card">
+      <img src="assets/estate.jpg" alt="Estate Developer" />
+      <p>The Greatest Estate Developer</p>
+    </div>
+    <div class="card">
+      <img src="assets/coming.jpg" alt="Coming Soon" />
+      <p>Coming Soon</p>
+    </div>
+  </div>
 </body>
 </html>
