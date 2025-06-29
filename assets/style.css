@@ -1,55 +1,66 @@
-/* Dark Gradient Background */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #0a0a0a, #121212, #1c1c1c);
-  color: white;
+  background: linear-gradient(to bottom right, #0a0a0a, #1c1c1c);
+  color: #fff;
 }
 
-/* Title and subtitle */
-h1 {
-  text-align: center;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #141414;
+  border-bottom: 1px solid #14a3c7;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
   color: #14a3c7;
-  font-size: 2em;
-  margin-top: 20px;
 }
 
-h2 {
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.intro {
+  padding: 2rem;
   text-align: center;
-  color: #cccccc;
-  font-size: 1em;
-  margin-bottom: 20px;
 }
 
-/* Comic Grid */
-.comic-grid {
+.manhwa-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 10px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.comic-card {
-  background-color: #222;
+.manhwa-card {
+  background: #1c1c1c;
+  padding: 0.5rem;
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 10px #00000070;
-  transition: transform 0.3s;
-}
-
-.comic-card:hover {
-  transform: scale(1.03);
-}
-
-.comic-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.comic-card p {
-  padding: 10px;
   text-align: center;
-  font-size: 0.9em;
-  color: #ffffff;
+  border: 1px solid #14a3c7;
+}
+
+.placeholder {
+  height: 180px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #888;
+  font-size: 0.9rem;
 }
