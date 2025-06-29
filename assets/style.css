@@ -1,66 +1,90 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #0a0a0a, #1c1c1c);
-  color: #fff;
+  background: linear-gradient(to bottom right, #000000, #141414, #0f0f0f);
+  color: white;
 }
 
 .topbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   background: #141414;
-  border-bottom: 1px solid #14a3c7;
+  padding: 10px 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
 }
 
-.topbar h1 {
-  margin: 0;
-  font-size: 1.5rem;
+.menu-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+#sidebar {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  background: #1c1c1c;
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+}
+
+#sidebar.active {
+  right: 0;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  background: gray;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px 0;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 5px #000;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 16px;
   color: #14a3c7;
 }
 
-.nav a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.intro {
-  padding: 2rem;
-  text-align: center;
-}
-
-.manhwa-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.manhwa-card {
-  background: #1c1c1c;
-  padding: 0.5rem;
-  border-radius: 12px;
-  text-align: center;
-  border: 1px solid #14a3c7;
-}
-
-.placeholder {
-  height: 180px;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #111;
-  color: #888;
-  font-size: 0.9rem;
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  padding-bottom: 10px;
 }
