@@ -1,0 +1,55 @@
+/* Dark Gradient Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0a0a0a, #121212, #1c1c1c);
+  color: white;
+}
+
+/* Title and subtitle */
+h1 {
+  text-align: center;
+  color: #14a3c7;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #cccccc;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Comic Grid */
+.comic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.comic-card {
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070;
+  transition: transform 0.3s;
+}
+
+.comic-card:hover {
+  transform: scale(1.03);
+}
+
+.comic-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.comic-card p {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ffffff;
+}
