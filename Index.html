@@ -2,43 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScans – Read Popular Korean Manhwas</title>
-  <meta name="description" content="Read free Korean Manhwas like Solo Leveling, ORV, and more. Mobile-friendly, clean design.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NotMy Scans – Read Popular Korean Manhwas Free</title>
+  <meta name="description" content="Read the latest Korean manhwas like Solo Leveling, ORV, and more – Free and mobile-friendly.">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <h1>NotMyScans</h1>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Login</a>
-      <a href="#">Search</a>
-    </nav>
+  <header>
+    <div class="topbar">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <h1>NotMy Scans</h1>
+    </div>
   </header>
 
-  <section class="intro">
-    <h2>Welcome to NotMyScans!</h2>
-    <p>Your hub for reading the latest Korean manhwas online — free & mobile optimized.</p>
-  </section>
+  <aside id="sidebar">
+    <div class="profile-pic"></div>
+    <nav>
+      <ul>
+        <li><span class="icon">🏠</span> Home</li>
+        <li><span class="icon">📚</span> Comics</li>
+        <li><span class="icon">🔖</span> Bookmarks</li>
+        <li><span class="icon">📝</span> Recruitment</li>
+        <li><span class="icon">🔒</span> Login</li>
+      </ul>
+    </nav>
+  </aside>
 
-  <section class="manhwa-grid">
-    <div class="manhwa-card">
-      <div class="placeholder">Image coming soon</div>
-      <h3>Solo Leveling</h3>
-    </div>
-    <div class="manhwa-card">
-      <div class="placeholder">Image coming soon</div>
-      <h3>Omniscient Reader’s Viewpoint</h3>
-    </div>
-    <div class="manhwa-card">
-      <div class="placeholder">Image coming soon</div>
-      <h3>The Greatest Estate Developer</h3>
-    </div>
-  </section>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <img src="assets/images/orv.jpg" alt="ORV" />
+        <h2>ORV</h2>
+        <p>Coming Soon</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/solo.jpg" alt="Solo Leveling" />
+        <h2>Solo Leveling</h2>
+        <p>Coming Soon</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/estate.jpg" alt="Greatest Estate Developer" />
+        <h2>Estate Developer</h2>
+        <p>Coming Soon</p>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2025 NotMyScans. All rights reserved.</p>
-  </footer>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
