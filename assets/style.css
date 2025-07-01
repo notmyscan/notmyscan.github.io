@@ -1,1 +1,110 @@
+/* ===== Base Settings ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0e0e0e, #14a3c7);
+  color: white;
+}
 
+/* ===== Toggle Button (Hamburger Icon) ===== */
+.menu-icon {
+  font-size: 2rem;
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* ===== Sidebar Styling ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background-color: #121212;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.6);
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+/* Profile circle at top left inside sidebar */
+.sidebar .profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.sidebar .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #14a3c7;
+}
+
+.sidebar .profile span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sidebar Links */
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
+  gap: 10px;
+}
+
+.sidebar nav a:hover {
+  color: #14a3c7;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 25px 0 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* ===== Comic Grid Cards ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px 15px 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height
