@@ -4,4 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NotMyScan – Read Popular Korean Manhwa Free</title>
-  <meta name="description" content="Read popular Korean manhwas and webtoons like Solo Level
+  <meta name="description" content="Read popular Korean manhwas and webtoons like Solo Leveling, ORV, and more — 100% Free, Mobile-Friendly. Updated Daily.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Menu Icon -->
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="profile">
+      <img src="assets/images/profile.jpg" alt="Profile" />
+      <span>User</span>
+    </div>
+    <nav>
+      <a href="#"><img src="assets/images/icon-home.png" width="20"> Home</a>
+      <a href="#"><img src="assets/images/icon-comic.png" width="20"> Comics</a>
+      <a href="#"><img src="assets/images/icon-bookmark.png" width="20"> Bookmarks</a>
+      <a href="#"><img src="assets/images/icon-login.png" width="20"> Login</a>
+      <a href="#"><img src="assets/images/icon-search.png" width="20"> Search</a>
+    </nav>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner"></div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search manhwa...">
+  </div>
+
+  <!-- Popular Section -->
+  <h2 class="section-title">Popular Today</h2>
+  <div class="card-grid">
+    <div class="card">
+      <a href="solo.html"><img src="assets/images/solo.jpg" alt="Solo Leveling"></a>
+      <p>Solo Leveling</p>
+    </div>
+    <div class="card">
+      <a href="orv.html"><img src="assets/images/orv.jpg" alt="ORV"></a>
+      <p>Omniscient Reader's Viewpoint</p>
+    </div>
+    <div class="card">
+      <a href="estate.html"><img src="assets/images/estate.jpg" alt="Greatest Estate Developer"></a>
+      <p>Greatest Estate Developer</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/coming.jpg" alt="Coming Soon">
+      <p>Coming Soon</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/last.jpg" alt="Coming Soon">
+      <p>Coming Soon</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/mount.jpg" alt="Coming Soon">
+      <p>Coming Soon</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/damn.jpg" alt="Coming Soon">
+      <p>Coming Soon</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/player.jpg" alt="Coming Soon">
+      <p>Coming Soon</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
