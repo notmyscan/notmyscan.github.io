@@ -1,57 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NotMyScan</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+<section class="section-title">Popular Today</section>
 
-  <div class="sidebar" id="sidebar">
-    <div class="profile">
-      <img src="assets/profile.jpg" alt="Profile">
-    </div>
-    <nav>
-      <a href="#"><img src="assets/home.svg" alt="Home" class="icon"> Home</a>
-      <a href="#"><img src="assets/comic.svg" alt="Comics" class="icon"> Comics</a>
-      <a href="#"><img src="assets/bookmark.svg" alt="Bookmarks" class="icon"> Bookmarks</a>
-      <a href="#"><img src="assets/recruit.svg" alt="Recruit" class="icon"> Recruitment</a>
-      <a href="#"><img src="assets/login.svg" alt="Login" class="icon"> Login</a>
-    </nav>
+<div class="comic-grid">
+  <!-- OLD 3 -->
+  <div class="comic-card">
+    <img src="assets/images/solo.jpg" alt="Solo Leveling">
+    <div class="comic-title">Solo Leveling</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/orv.jpg" alt="Omniscient Reader">
+    <div class="comic-title">Omniscient Reader</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/estate.jpg" alt="World After the Fall">
+    <div class="comic-title">World After the Fall</div>
   </div>
 
-  <header>
-    <h1>NotMyScan</h1>
-  </header>
-
-  <section>
-    <h2 class="section-title">Popular Today</h2>
-    <div class="card-grid">
-      <div class="card">
-        <img src="assets/solo.jpg" alt="Solo Leveling">
-        <p>Solo Leveling</p>
-      </div>
-      <div class="card">
-        <img src="assets/orv.jpg" alt="Omniscient Reader">
-        <p>Omniscient Reader Viewpoint</p>
-      </div>
-      <div class="card">
-        <img src="assets/estate.jpg" alt="Estate Developer">
-        <p>The Greatest Estate Developer</p>
-      </div>
-      <div class="card">
-        <img src="assets/coming.jpg" alt="Coming Soon">
-        <p>Coming Soon</p>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    function toggleSidebar() {
-      document.getElementById('sidebar').classList.toggle('active');
-    }
-  </script>
-</body>
-</html>
+  <!-- NEW 5 -->
+  <div class="comic-card">
+    <img src="assets/images/absolute.jpg" alt="Absolute Regression">
+    <div class="comic-title">Absolute Regression</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/last.jpg" alt="The Last Adventurer">
+    <div class="comic-title">The Last Adventurer</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/mount.jpg" alt="Mount Hua Sect">
+    <div class="comic-title">Mount Hua Sect</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/damn.jpg" alt="Damn Reincarnation">
+    <div class="comic-title">Damn Reincarnation</div>
+  </div>
+  <div class="comic-card">
+    <img src="assets/images/player.jpg" alt="Solo Max-Level Newbie">
+    <div class="comic-title">Solo Max-Level Newbie</div>
+  </div>
+</div>
