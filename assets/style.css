@@ -1,90 +1,114 @@
-/* ===== RESET & BASE ===== */
-body {
+/* Reset & Body */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom, #0d1117, #111827);
   color: white;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
+/* Header / Topbar */
 .topbar {
   background: #14a3c7;
-  padding: 10px 20px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Removed sticky */
-  position: relative;
 }
-
 .logo {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
+  color: white;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
+  gap: 18px;
 }
-
 .nav-links li {
   cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-links li:hover {
+  color: #000;
 }
 
-/* ===== HERO ===== */
+/* Hero Section */
 .hero {
   padding: 30px 20px;
   text-align: center;
 }
-
 .hero h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #14a3c7;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.1em;
+  color: #ccc;
 }
 
-/* ===== COMIC GRID ===== */
+/* Comic Grid Section */
+.comic-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px 40px;
+}
 .comic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-  padding: 15px;
+  gap: 20px;
+  margin-top: 25px;
 }
-
 .comic-card {
   background: #1c1f26;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
-
 .comic-card:hover {
   transform: scale(1.03);
 }
-
 .comic-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  display: block;
 }
-
 .comic-card p {
-  padding: 8px;
-  margin: 0;
+  padding: 12px;
   color: #14a3c7;
   font-weight: 600;
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
-/* ===== FOOTER ===== */
+/* Footer */
 footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
   background-color: #0d1117;
   color: #888;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 2.6em;
+  }
+  .comic-card p {
+    font-size: 1.1em;
+  }
+  .nav-links li {
+    font-size: 1.05em;
+  }
 }
