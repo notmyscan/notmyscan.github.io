@@ -3,79 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScan – Read Popular Korean Manhwa Free</title>
-  <meta name="description" content="Read popular Korean manhwas and webtoons like Solo Leveling, ORV, and more — 100% Free, Mobile-Friendly. Updated Daily.">
+  <title>NotMyScan – Read Popular Korean Manhwas Free</title>
+  <meta name="description" content="Read the latest Korean Manhwa like Solo Leveling, ORV, and more – Free and mobile-friendly.">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- Menu Icon -->
+  <!-- Hamburger Menu -->
   <div class="menu-icon" onclick="toggleSidebar()">☰</div>
 
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="profile">
       <img src="assets/images/profile.jpg" alt="Profile" />
-      <span>User</span>
     </div>
     <nav>
-      <a href="#"><img src="assets/images/icon-home.png" width="20"> Home</a>
-      <a href="#"><img src="assets/images/icon-comic.png" width="20"> Comics</a>
-      <a href="#"><img src="assets/images/icon-bookmark.png" width="20"> Bookmarks</a>
-      <a href="#"><img src="assets/images/icon-login.png" width="20"> Login</a>
-      <a href="#"><img src="assets/images/icon-search.png" width="20"> Search</a>
+      <a href="#">🏠 Home</a>
+      <a href="#">📚 Comics</a>
+      <a href="#">🔖 Bookmarks</a>
+      <a href="#">🔍 Search</a>
+      <a href="#">🔐 Login</a>
     </nav>
   </div>
 
-  <!-- Banner -->
-  <div class="banner"></div>
+  <!-- Hero Banner -->
+  <section class="section-title">
+    <h1>🔥 Popular Today</h1>
+  </section>
 
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <input type="text" placeholder="Search manhwa...">
-  </div>
-
-  <!-- Popular Section -->
-  <h2 class="section-title">Popular Today</h2>
-  <div class="card-grid">
+  <!-- Manhwa Cards Grid -->
+  <section class="card-grid">
     <div class="card">
-      <a href="solo.html"><img src="assets/images/solo.jpg" alt="Solo Leveling"></a>
+      <img src="assets/images/solo.jpg" alt="Solo Leveling" />
       <p>Solo Leveling</p>
     </div>
     <div class="card">
-      <a href="orv.html"><img src="assets/images/orv.jpg" alt="ORV"></a>
-      <p>Omniscient Reader's Viewpoint</p>
+      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
+      <p>Omniscient Reader</p>
     </div>
     <div class="card">
-      <a href="estate.html"><img src="assets/images/estate.jpg" alt="Greatest Estate Developer"></a>
+      <img src="assets/images/estate.jpg" alt="Greatest Estate Developer" />
       <p>Greatest Estate Developer</p>
     </div>
     <div class="card">
-      <img src="assets/images/coming.jpg" alt="Coming Soon">
+      <img src="assets/images/player.jpg" alt="Player Who Returned 10,000 Years Later" />
+      <p>Player Returns</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/last.jpg" alt="Coming Soon" />
       <p>Coming Soon</p>
     </div>
     <div class="card">
-      <img src="assets/images/last.jpg" alt="Coming Soon">
+      <img src="assets/images/absolute.jpg" alt="Coming Soon" />
       <p>Coming Soon</p>
     </div>
     <div class="card">
-      <img src="assets/images/mount.jpg" alt="Coming Soon">
+      <img src="assets/images/damn.jpg" alt="Coming Soon" />
       <p>Coming Soon</p>
     </div>
     <div class="card">
-      <img src="assets/images/damn.jpg" alt="Coming Soon">
+      <img src="assets/images/mount.jpg" alt="Coming Soon" />
       <p>Coming Soon</p>
     </div>
-    <div class="card">
-      <img src="assets/images/player.jpg" alt="Coming Soon">
-      <p>Coming Soon</p>
-    </div>
-  </div>
+  </section>
 
   <script>
     function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.classList.toggle("active");
+      document.getElementById("sidebar").classList.toggle("active");
     }
   </script>
 </body>
