@@ -1,78 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap');
-
+/* Universal Reset & Font */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background: linear-gradient(to bottom, #0d1117, #111827);
   color: white;
-  max-width: 100vw;
-  overflow-x: hidden;
 }
 
+/* Header Navigation */
 .topbar {
   background: #14a3c7;
   padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #fff;
+  color: white;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  padding: 0;
+  gap: 15px;
   margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
   cursor: pointer;
   font-weight: 500;
-  color: #ffffff;
+  color: white;
 }
 
+/* Hero Section */
 .hero {
   padding: 30px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #14a3c7;
 }
 
 .hero p {
+  color: #ccc;
   font-size: 1em;
-  color: #aaa;
+  margin-top: 10px;
 }
 
+/* Manhwa Grid */
 .comic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .comic-card {
-  background: #1f232b;
-  border-radius: 12px;
+  background: #1c1f26;
+  border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 .comic-card:hover {
@@ -81,38 +82,24 @@ body {
 
 .comic-card img {
   width: 100%;
-  height: 210px;
+  height: auto;
   object-fit: cover;
-  border-bottom: 2px solid #14a3c7;
+  display: block;
 }
 
 .comic-card .title {
-  padding: 12px 8px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.2em;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
   color: #14a3c7;
-  letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
   background-color: #0d1117;
   color: #888;
-}
-
-/* Small device fixes */
-@media screen and (max-width: 480px) {
-  .nav-links li {
-    font-size: 14px;
-  }
-
-  .hero h1 {
-    font-size: 1.5em;
-  }
-
-  .comic-card .title {
-    font-size: 1em;
-  }
 }
