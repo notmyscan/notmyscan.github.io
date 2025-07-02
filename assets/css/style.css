@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #0e0e0e, #14a3c7);
   color: white;
 }
@@ -41,25 +41,18 @@ body {
 
 .sidebar nav a {
   display: block;
-  padding: 12px 0;
+  padding: 10px 0;
   color: white;
   text-decoration: none;
   font-size: 18px;
   border-bottom: 1px solid #333;
-  transition: background 0.2s;
-}
-
-.sidebar nav a:hover {
-  background: #222;
 }
 
 .section-title {
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
-  border-bottom: 1px solid #14a3c7;
 }
 
 .card-grid {
@@ -71,11 +64,11 @@ body {
 
 .card {
   background: #1a1a1a;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.2s ease;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .card img {
@@ -85,11 +78,6 @@ body {
 }
 
 .card p {
-  margin: 10px 0;
+  margin: 8px 0 0;
   font-size: 16px;
-  color: #ffffff;
-}
-
-.card:hover {
-  transform: scale(1.02);
 }
