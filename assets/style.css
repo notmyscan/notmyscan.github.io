@@ -1,70 +1,56 @@
-/* Universal Reset & Font */
+/* ===== RESET & BASE ===== */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom, #0d1117, #111827);
   color: white;
 }
 
-/* Header Navigation */
+/* ===== HEADER ===== */
 .topbar {
   background: #14a3c7;
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  /* Removed sticky */
+  position: relative;
 }
 
 .logo {
-  font-size: 1.6em;
-  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
   font-weight: bold;
-  color: white;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 15px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
   cursor: pointer;
-  font-weight: 500;
-  color: white;
 }
 
-/* Hero Section */
+/* ===== HERO ===== */
 .hero {
   padding: 30px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #14a3c7;
 }
 
-.hero p {
-  color: #ccc;
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-/* Manhwa Grid */
+/* ===== COMIC GRID ===== */
 .comic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 15px;
+  padding: 15px;
 }
 
 .comic-card {
@@ -73,7 +59,7 @@ body {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .comic-card:hover {
@@ -82,20 +68,19 @@ body {
 
 .comic-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
-  display: block;
 }
 
-.comic-card .title {
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1em;
+.comic-card p {
+  padding: 8px;
+  margin: 0;
   color: #14a3c7;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95em;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 15px;
