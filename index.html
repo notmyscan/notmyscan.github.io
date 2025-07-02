@@ -3,49 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScan – Read Latest Korean Manhwa Free</title>
-  <meta name="description" content="Read popular Korean manhwa online for free at NotMyScan. Smooth mobile experience, high-quality chapters, and fast updates.">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <meta name="description" content="Read popular Korean manhwa free at NotMyScan" />
+  <title>NotMyScan - Read Manhwa Free</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-  <!-- Hamburger Icon -->
-  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
-
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <div class="profile">
-      <img src="assets/images/profile.jpg" alt="Profile Picture">
-    </div>
+  <header class="topbar">
+    <div class="logo">NotMyScan</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Comics</a>
-      <a href="#">Bookmarks</a>
-      <a href="#">Recruitment</a>
-      <a href="#">Login</a>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Comics</li>
+        <li>Bookmarks</li>
+        <li>Login</li>
+      </ul>
     </nav>
-  </div>
+  </header>
 
-  <!-- Manhwa Sections -->
-  <div class="section-title"><h1>Popular Manhwa</h1></div>
-  <div class="card-grid">
-    <div class="card"><img src="assets/images/solo.jpg" alt="Solo Leveling"><p>Solo Leveling</p></div>
-    <div class="card"><img src="assets/images/orv.jpg" alt="ORV"><p>Omniscient Reader's Viewpoint</p></div>
-    <div class="card"><img src="assets/images/estate.jpg" alt="Estate"><p>Greatest Estate Developer</p></div>
-    <div class="card"><img src="assets/images/absolute.jpg" alt="Absolute"><p>Absolute Regression</p></div>
-    <div class="card"><img src="assets/images/mount.jpg" alt="Mount"><p>Return of Mount Hua Sect</p></div>
-    <div class="card"><img src="assets/images/player.jpg" alt="Player"><p>Solo Max-Level Newbie</p></div>
-    <div class="card"><img src="assets/images/damn.jpg" alt="Damn"><p>Damn Reincarnation</p></div>
-    <div class="card"><img src="assets/images/last.jpg" alt="Last"><p>Coming Soon</p></div>
-  </div>
+  <section class="hero">
+    <h1>Popular Manhwa Updates</h1>
+    <p>Read trending Korean manhwa for free — mobile optimized</p>
+  </section>
 
-  <!-- JavaScript to toggle sidebar -->
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.classList.toggle("active");
-    }
-  </script>
+  <section class="comic-grid">
+    <div class="comic-card">
+      <img src="assets/images/solo.jpg" alt="Solo Leveling" />
+      <p>Solo Leveling</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/player.jpg" alt="The Player That Can't Level Up" />
+      <p>The Player That Can't Level Up</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
+      <p>Omniscient Reader</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/estate.jpg" alt="The Greatest Estate Developer" />
+      <p>Greatest Estate Developer</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/damn.jpg" alt="Damn Reincarnation" />
+      <p>Damn Reincarnation</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/absolute.jpg" alt="Absolute Regression" />
+      <p>Absolute Regression</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/last.jpg" alt="The Last Necromancer" />
+      <p>The Last Necromancer</p>
+    </div>
+    <div class="comic-card">
+      <img src="assets/images/mount.jpg" alt="Return of Mount Hua Sect" />
+      <p>Return of Mount Hua Sect</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NotMyScan. All rights reserved.</p>
+  </footer>
 </body>
 </html>
