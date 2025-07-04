@@ -1,98 +1,111 @@
+/* Reset & Body */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #0d1117, #111827);
   color: white;
 }
 
+/* Topbar */
 .topbar {
-  background: #14a3c7;
-  padding: 12px 20px;
+  background-color: #14a3c7;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .logo {
-  font-size: 1.8em;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.topnav {
+.nav-links {
+  list-style: none;
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  gap: 20px;
 }
 
-.topnav a {
+.nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  font-weight: 500;
+  transition: opacity 0.2s;
 }
 
+.nav-links li a:hover {
+  opacity: 0.7;
+}
+
+/* Hero */
 .hero {
-  padding: 30px 20px 10px;
   text-align: center;
+  padding: 40px 20px 20px;
 }
 
 .hero h1 {
-  font-size: 2em;
+  font-size: 2rem;
   color: #14a3c7;
+  margin-bottom: 10px;
 }
 
+.hero p {
+  color: #aaa;
+}
+
+/* Comic Grid */
 .comic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .comic-card {
   background: #1c1f26;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .comic-card:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
 }
 
 .comic-card img {
   width: 100%;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
+  display: block;
 }
 
-.comic-card p {
-  padding: 10px 0 4px;
+/* Comic Title + Rating */
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
   color: #14a3c7;
-  font-size: 16px;
+}
+
+.card-info span {
+  color: #ffc107;
   font-weight: 600;
 }
 
-.stars {
-  font-size: 16px;
-  color: gold;
-  padding-bottom: 10px;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  background-color: #0d1117;
+  padding: 20px;
+  background: #0d1117;
+  font-size: 0.85rem;
   color: #888;
 }
