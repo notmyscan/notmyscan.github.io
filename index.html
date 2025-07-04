@@ -6,88 +6,75 @@
   <meta name="description" content="Read popular Korean manhwa free at NotMyScan" />
   <title>NotMyScan - Read Manhwa Free</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0b6f5c9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
-      <span class="close-btn" onclick="toggleSidebar()">✖</span>
-    </div>
-    <nav class="sidebar-links">
-      <a href="#">🏠 Home</a>
-      <a href="#">📚 Comics</a>
-      <a href="#">🔖 Bookmarks</a>
-      <a href="#">📢 Recruitment</a>
-      <a href="#">🔐 Login</a>
-    </nav>
-  </div>
 
-  <!-- Topbar -->
   <header class="topbar">
-    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
     <div class="logo">NotMyScan</div>
-    <div class="search-icon">🔍</div>
+    <nav class="topnav">
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-book"></i> Comics</a>
+      <a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a>
+      <a href="#"><i class="fas fa-user"></i> Login</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Read Popular Korean Manhwa Free</h1>
-    <p>Only the best trending titles, updated weekly.</p>
+    <h1>Popular Manhwa Updates</h1>
+    <p>Read trending Korean manhwa for free — fully mobile optimized</p>
   </section>
 
-  <!-- Comic Grid -->
   <section class="comic-grid">
-    <!-- CARD TEMPLATE -->
-    <a href="#" class="comic-card">
-      <img src="assets/images/solo.jpg" alt="Solo Leveling" />
-      <h3>Solo Leveling</h3>
-      <div class="stars">★★★★★</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
-      <h3>Omniscient Reader</h3>
-      <div class="stars">★★★★★</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/estate.jpg" alt="Estate Developer" />
-      <h3>Greatest Estate Developer</h3>
-      <div class="stars">★★★★☆</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/last.jpg" alt="Last Adventure" />
-      <h3>Last Adventure</h3>
-      <div class="stars">★★★★☆</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/return.jpg" alt="Return of Mount Hua Sect" />
-      <h3>Return of Mount Hua Sect</h3>
-      <div class="stars">★★★★★</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/damn.jpg" alt="Damn Reincarnation" />
-      <h3>Damn Reincarnation</h3>
-      <div class="stars">★★★★☆</div>
-    </a>
-    <a href="#" class="comic-card">
-      <img src="assets/images/player.jpg" alt="Solo Max Level Newbie" />
-      <h3>Solo Max Level Newbie</h3>
-      <div class="stars">★★★★☆</div>
-    </a>
+
+    <div class="comic-card">
+      <img src="assets/images/solo.jpg" alt="Solo Leveling">
+      <p>Solo Leveling</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/orv.jpg" alt="Omniscient Reader’s Viewpoint">
+      <p>Omniscient Reader</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/estate.jpg" alt="Greatest Estate Developer">
+      <p>Estate Developer</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/player.jpg" alt="Solo Max Level Newbie">
+      <p>Solo Max Level Newbie</p>
+      <div class="stars">⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/last.jpg" alt="Last Adventure">
+      <p>Last Adventure</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/damn.jpg" alt="Damn Reincarnation">
+      <p>Damn Reincarnation</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="comic-card">
+      <img src="assets/images/return.jpg" alt="Return of Mount Hua Sect">
+      <p>Return of Mount Hua</p>
+      <div class="stars">⭐⭐⭐</div>
+    </div>
+
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 NotMyScan. All rights reserved.</p>
   </footer>
 
-  <!-- Sidebar Script -->
-  <script>
-    function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
