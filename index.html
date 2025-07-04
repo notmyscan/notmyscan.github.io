@@ -1,100 +1,92 @@
-<!-- Comic Grid Section Start -->
-<section class="text-center text-white py-8">
-  <h1 class="text-3xl font-extrabold mb-2">LATEST WEBTOON UPDATES</h1>
-  <p class="text-gray-400 mb-6">Read trending Korean manhwa for free — mobile optimized</p>
-
-  <div class="grid grid-cols-2 gap-4 px-4">
-
-    <!-- Manhwa 1 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/solo.jpg" alt="Solo Leveling" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Solo Leveling</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotMyScan - Read Free Manhwa</title>
+  <meta name="description" content="Read popular Korean manhwa free at NotMyScan" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="logo">NotMyScan</div>
+    <div class="menu-icons">
+      <span class="icon" onclick="toggleSidebar()">☰</span>
+      <span class="icon">🔍</span>
     </div>
+  </header>
 
-    <!-- Manhwa 2 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/orv.jpg" alt="Omniscient Reader" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Omniscient Reader</p>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/images/profile.jpg" alt="Profile" class="profile-img" />
+      <span class="close-btn" onclick="toggleSidebar()">✖</span>
     </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Comics</a>
+      <a href="#">Bookmarks</a>
+      <a href="#">Login</a>
+    </nav>
+  </aside>
 
-    <!-- Manhwa 3 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/estate.jpg" alt="The Great Mage" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">The Great Mage</p>
-    </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Read Trending Korean Manhwa</h1>
+    <p>Best stories, smooth design, free access — NotMyScan</p>
+  </section>
 
-    <!-- Manhwa 4 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Coming Soon" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Coming Soon</p>
-    </div>
+  <!-- Comic Grid -->
+  <section class="comic-grid">
+    <!-- Each card -->
+    <a href="#" class="comic-card">
+      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
+      <p class="title">Omniscient Reader</p>
+      <p class="rating">⭐ 4.8</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/solo.jpg" alt="Solo Leveling" />
+      <p class="title">Solo Leveling</p>
+      <p class="rating">⭐ 4.9</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/estate.jpg" alt="Estate Developer" />
+      <p class="title">Estate Developer</p>
+      <p class="rating">⭐ 4.7</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/last.jpg" alt="Last Adventure" />
+      <p class="title">Last Adventure</p>
+      <p class="rating">⭐ 4.5</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/return.jpg" alt="Mount Hua Sect" />
+      <p class="title">Mount Hua Sect</p>
+      <p class="rating">⭐ 4.8</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/damn.jpg" alt="Damn Reincarnation" />
+      <p class="title">Damn Reincarnation</p>
+      <p class="rating">⭐ 4.6</p>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/player.jpg" alt="Max-Level Newbie" />
+      <p class="title">Max-Level Newbie</p>
+      <p class="rating">⭐ 4.7</p>
+    </a>
+  </section>
 
-    <!-- Manhwa 5 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Reaper of the Drifting Moon" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Reaper of the Drifting Moon</p>
-    </div>
-
-    <!-- Manhwa 6 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Nano Machine" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Nano Machine</p>
-    </div>
-
-    <!-- Manhwa 7 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Damn Reincarnation" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Damn Reincarnation</p>
-    </div>
-
-    <!-- Manhwa 8 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="The World After the Fall" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">The World After the Fall</p>
-    </div>
-
-    <!-- Manhwa 9 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Return of the Mount Hua Sect" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Return of the Mount Hua Sect</p>
-    </div>
-
-    <!-- Manhwa 10 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Legend of the Northern Blade" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Legend of the Northern Blade</p>
-    </div>
-
-    <!-- Manhwa 11 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="SSS-Class Suicide Hunter" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">SSS-Class Suicide Hunter</p>
-    </div>
-
-    <!-- Manhwa 12 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Overgeared" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Overgeared</p>
-    </div>
-
-    <!-- Manhwa 13 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Murim Login" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Murim Login</p>
-    </div>
-
-    <!-- Manhwa 14 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="The Max Level Hero" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">The Max Level Hero</p>
-    </div>
-
-    <!-- Manhwa 15 -->
-    <div class="bg-[#111827] p-2 rounded-lg">
-      <img src="images/comingsoon.jpg" alt="Heavenly Demon Reborn!" class="w-full h-40 object-cover rounded">
-      <p class="mt-2 text-[#14a3c7] font-semibold">Heavenly Demon Reborn!</p>
-    </div>
-
-  </div>
-</section>
-<!-- Comic Grid Section End -->
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NotMyScan. All rights reserved.</p>
+  </footer>
+</body>
+</html>
