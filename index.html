@@ -3,84 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScan - Read Free Manhwa</title>
   <meta name="description" content="Read popular Korean manhwa free at NotMyScan" />
+  <title>NotMyScan - Read Manhwa Free</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('active');
-    }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Topbar -->
-  <header class="topbar">
-    <div class="logo">NotMyScan</div>
-    <div class="menu-icons">
-      <span class="icon" onclick="toggleSidebar()">☰</span>
-      <span class="icon">🔍</span>
-    </div>
-  </header>
-
   <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar">
+  <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <img src="assets/images/profile.jpg" alt="Profile" class="profile-img" />
+      <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
       <span class="close-btn" onclick="toggleSidebar()">✖</span>
     </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Comics</a>
-      <a href="#">Bookmarks</a>
-      <a href="#">Login</a>
+    <nav class="sidebar-links">
+      <a href="#">🏠 Home</a>
+      <a href="#">📚 Comics</a>
+      <a href="#">🔖 Bookmarks</a>
+      <a href="#">📢 Recruitment</a>
+      <a href="#">🔐 Login</a>
     </nav>
-  </aside>
+  </div>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    <div class="logo">NotMyScan</div>
+    <div class="search-icon">🔍</div>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Read Trending Korean Manhwa</h1>
-    <p>Best stories, smooth design, free access — NotMyScan</p>
+    <h1>Read Popular Korean Manhwa Free</h1>
+    <p>Only the best trending titles, updated weekly.</p>
   </section>
 
   <!-- Comic Grid -->
   <section class="comic-grid">
-    <!-- Each card -->
-    <a href="#" class="comic-card">
-      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
-      <p class="title">Omniscient Reader</p>
-      <p class="rating">⭐ 4.8</p>
-    </a>
+    <!-- CARD TEMPLATE -->
     <a href="#" class="comic-card">
       <img src="assets/images/solo.jpg" alt="Solo Leveling" />
-      <p class="title">Solo Leveling</p>
-      <p class="rating">⭐ 4.9</p>
+      <h3>Solo Leveling</h3>
+      <div class="stars">★★★★★</div>
+    </a>
+    <a href="#" class="comic-card">
+      <img src="assets/images/orv.jpg" alt="Omniscient Reader" />
+      <h3>Omniscient Reader</h3>
+      <div class="stars">★★★★★</div>
     </a>
     <a href="#" class="comic-card">
       <img src="assets/images/estate.jpg" alt="Estate Developer" />
-      <p class="title">Estate Developer</p>
-      <p class="rating">⭐ 4.7</p>
+      <h3>Greatest Estate Developer</h3>
+      <div class="stars">★★★★☆</div>
     </a>
     <a href="#" class="comic-card">
       <img src="assets/images/last.jpg" alt="Last Adventure" />
-      <p class="title">Last Adventure</p>
-      <p class="rating">⭐ 4.5</p>
+      <h3>Last Adventure</h3>
+      <div class="stars">★★★★☆</div>
     </a>
     <a href="#" class="comic-card">
-      <img src="assets/images/return.jpg" alt="Mount Hua Sect" />
-      <p class="title">Mount Hua Sect</p>
-      <p class="rating">⭐ 4.8</p>
+      <img src="assets/images/return.jpg" alt="Return of Mount Hua Sect" />
+      <h3>Return of Mount Hua Sect</h3>
+      <div class="stars">★★★★★</div>
     </a>
     <a href="#" class="comic-card">
       <img src="assets/images/damn.jpg" alt="Damn Reincarnation" />
-      <p class="title">Damn Reincarnation</p>
-      <p class="rating">⭐ 4.6</p>
+      <h3>Damn Reincarnation</h3>
+      <div class="stars">★★★★☆</div>
     </a>
     <a href="#" class="comic-card">
-      <img src="assets/images/player.jpg" alt="Max-Level Newbie" />
-      <p class="title">Max-Level Newbie</p>
-      <p class="rating">⭐ 4.7</p>
+      <img src="assets/images/player.jpg" alt="Solo Max Level Newbie" />
+      <h3>Solo Max Level Newbie</h3>
+      <div class="stars">★★★★☆</div>
     </a>
   </section>
 
@@ -88,5 +82,12 @@
   <footer>
     <p>&copy; 2025 NotMyScan. All rights reserved.</p>
   </footer>
+
+  <!-- Sidebar Script -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
