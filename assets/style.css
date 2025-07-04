@@ -1,99 +1,45 @@
-/* ===== Global Styles ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0d1117, #14a3c7);
+  background: linear-gradient(to bottom, #0d1117, #111827);
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* ===== Topbar ===== */
 .topbar {
-  background: #0e141a;
+  background: #14a3c7;
   padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
-  font-size: 1.7em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #14a3c7;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-}
-
-.nav-links li {
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 500;
-  color: white;
-  transition: color 0.3s;
-}
-
-.nav-links li:hover {
-  color: #14a3c7;
-}
-
-/* ===== Sidebar ===== */
-.menu-icon {
   font-size: 1.8em;
-  position: fixed;
-  top: 12px;
-  left: 15px;
-  cursor: pointer;
-  z-index: 1001;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.topnav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.topnav a {
   color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: -260px;
-  width: 250px;
-  height: 100%;
-  background-color: #111;
-  padding: 20px;
-  transition: right 0.4s ease;
-  z-index: 1002;
-}
-
-.sidebar.active {
-  right: 0;
-}
-
-.sidebar .close-btn {
-  font-size: 1.4em;
-  text-align: right;
-  cursor: pointer;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.sidebar nav a {
-  display: block;
-  padding: 10px 0;
-  font-size: 18px;
-  color: white;
-  border-bottom: 1px solid #333;
-}
-
-/* ===== Hero Section ===== */
 .hero {
   padding: 30px 20px 10px;
   text-align: center;
@@ -102,33 +48,26 @@ a {
 .hero h1 {
   font-size: 2em;
   color: #14a3c7;
-  margin-bottom: 8px;
 }
 
-.hero p {
-  font-size: 1em;
-  color: #ccc;
-}
-
-/* ===== Comic Grid ===== */
 .comic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .comic-card {
-  background: #1f252f;
-  border-radius: 12px;
+  background: #1c1f26;
+  border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .comic-card:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .comic-card img {
@@ -138,61 +77,22 @@ a {
 }
 
 .comic-card p {
-  padding: 10px;
+  padding: 10px 0 4px;
+  color: #14a3c7;
   font-size: 16px;
   font-weight: 600;
-  color: #14a3c7;
 }
 
-/* ===== Rating Stars ===== */
-.rating {
-  display: flex;
-  justify-content: center;
+.stars {
+  font-size: 16px;
+  color: gold;
   padding-bottom: 10px;
 }
 
-.rating input {
-  display: none;
-}
-
-.rating label {
-  font-size: 20px;
-  color: #555;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.rating input:checked ~ label,
-.rating label:hover,
-.rating label:hover ~ label {
-  color: gold;
-}
-
-/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
-  background-color: #0e141a;
+  background-color: #0d1117;
   color: #888;
-}
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.4em;
-  }
-
-  .nav-links {
-    gap: 10px;
-    font-size: 14px;
-  }
-
-  .comic-card img {
-    height: 180px;
-  }
-
-  .comic-card p {
-    font-size: 15px;
-  }
 }
