@@ -13,6 +13,7 @@
       color: white;
     }
 
+    /* Topbar */
     .topbar {
       display: flex;
       justify-content: space-between;
@@ -33,22 +34,15 @@
       gap: 15px;
     }
 
-    .icon-btn {
+    .circle-icon {
       background-color: #1a1f2c;
       border-radius: 50%;
-      width: 38px;
-      height: 38px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 10px;
+      color: #14a3c7;
+      font-size: 18px;
     }
 
-    .icon-btn svg {
-      width: 20px;
-      height: 20px;
-      fill: #14a3c7;
-    }
-
+    /* Hero Heading */
     .hero {
       text-align: center;
       padding: 40px 20px 10px;
@@ -67,6 +61,7 @@
       margin-top: 8px;
     }
 
+    /* Comic Grid */
     .comic-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -99,7 +94,7 @@
       font-size: 0.95em;
     }
 
-    /* Sidebar */
+    /* Mobile Sidebar */
     .sidebar {
       position: fixed;
       top: 0;
@@ -114,14 +109,6 @@
 
     .sidebar.show {
       right: 0;
-    }
-
-    .sidebar .close-btn {
-      font-size: 1.8em;
-      color: #aaa;
-      cursor: pointer;
-      text-align: right;
-      margin-bottom: 20px;
     }
 
     .sidebar button {
@@ -147,6 +134,12 @@
       font-size: 1em;
     }
 
+    /* Icons */
+    .material-icons {
+      font-family: 'Material Icons';
+    }
+
+    /* Responsive */
     @media (min-width: 768px) {
       .sidebar {
         display: none;
@@ -155,23 +148,12 @@
   </style>
 </head>
 <body>
-
   <!-- Topbar -->
   <div class="topbar">
     <div class="logo">NotMyScan</div>
     <div class="icons">
-      <div class="icon-btn" onclick="alert('Search coming soon')">
-        <!-- SVG Search Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.21 5.01 12.7 2.5 9.5 2.5S3.79 5.01 3.79 8.29s2.51 5.79 5.71 5.79a6.471 6.471 0 005.34-1.48l.27.28v.79l5 5 1.49-1.49-5-5zM9.5 13c-2.49 0-4.5-2.01-4.5-4.5S7.01 4 9.5 4s4.5 2.01 4.5 4.5S11.99 13 9.5 13z"/>
-        </svg>
-      </div>
-      <div class="icon-btn" onclick="toggleSidebar()">
-        <!-- Hamburger Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="#14a3c7" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <div class="circle-icon" onclick="alert('Search coming soon')">🔍</div>
+      <div class="circle-icon" onclick="toggleSidebar()">☰</div>
     </div>
   </div>
 
@@ -184,26 +166,25 @@
   <!-- Comic Grid -->
   <div class="comic-grid">
     <div class="comic-card">
-      <img src="./images/solo.jpg" alt="Solo Leveling">
+      <img src="solo.jpg" alt="Solo Leveling">
       <p>Solo Leveling</p>
     </div>
     <div class="comic-card">
-      <img src="./images/orv.jpg" alt="ORV">
+      <img src="orv.jpg" alt="ORV">
       <p>Omniscient Reader</p>
     </div>
     <div class="comic-card">
-      <img src="./images/estate.jpg" alt="Estate">
+      <img src="estate.jpg" alt="Estate">
       <p>The Great Mage</p>
     </div>
     <div class="comic-card">
-      <img src="./images/comingsoon.jpg" alt="Coming Soon">
+      <img src="comingsoon.jpg" alt="Coming Soon">
       <p>Coming Soon</p>
     </div>
   </div>
 
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
-    <div class="close-btn" onclick="toggleSidebar()">×</div>
     <button onclick="alert('Sign in')">Sign in</button>
     <button onclick="alert('Sign up')">Sign up</button>
     <ul>
@@ -216,8 +197,7 @@
 
   <script>
     function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.classList.toggle("show");
+      document.getElementById("sidebar").classList.toggle("show");
     }
   </script>
 </body>
