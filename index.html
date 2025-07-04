@@ -1,204 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NotMyScan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #0d1117, #111827);
-      color: white;
-    }
+<!-- Comic Grid Section Start -->
+<section class="text-center text-white py-8">
+  <h1 class="text-3xl font-extrabold mb-2">LATEST WEBTOON UPDATES</h1>
+  <p class="text-gray-400 mb-6">Read trending Korean manhwa for free — mobile optimized</p>
 
-    /* Topbar */
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #0d1117;
-    }
+  <div class="grid grid-cols-2 gap-4 px-4">
 
-    .logo {
-      font-family: 'Urbanist', sans-serif;
-      font-size: 1.8em;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    .icons {
-      display: flex;
-      gap: 15px;
-    }
-
-    .circle-icon {
-      background-color: #1a1f2c;
-      border-radius: 50%;
-      padding: 10px;
-      color: #14a3c7;
-      font-size: 18px;
-    }
-
-    /* Hero Heading */
-    .hero {
-      text-align: center;
-      padding: 40px 20px 10px;
-    }
-
-    .hero h1 {
-      font-size: 1.6em;
-      font-weight: bold;
-      color: white;
-      letter-spacing: 1px;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 0.9em;
-      margin-top: 8px;
-    }
-
-    /* Comic Grid */
-    .comic-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .comic-card {
-      background: #1c1f26;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .comic-card:hover {
-      transform: scale(1.03);
-    }
-
-    .comic-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    .comic-card p {
-      padding: 10px;
-      color: #14a3c7;
-      font-weight: 600;
-      font-size: 0.95em;
-    }
-
-    /* Mobile Sidebar */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 250px;
-      height: 100%;
-      background: #0d1117;
-      z-index: 999;
-      transition: right 0.3s ease;
-      padding: 20px;
-    }
-
-    .sidebar.show {
-      right: 0;
-    }
-
-    .sidebar button {
-      background: none;
-      border: 1px solid #aaa;
-      padding: 10px 20px;
-      color: white;
-      border-radius: 20px;
-      margin-bottom: 15px;
-      width: 100%;
-      font-size: 1em;
-    }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #222;
-      color: white;
-      font-size: 1em;
-    }
-
-    /* Icons */
-    .material-icons {
-      font-family: 'Material Icons';
-    }
-
-    /* Responsive */
-    @media (min-width: 768px) {
-      .sidebar {
-        display: none;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="logo">NotMyScan</div>
-    <div class="icons">
-      <div class="circle-icon" onclick="alert('Search coming soon')">🔍</div>
-      <div class="circle-icon" onclick="toggleSidebar()">☰</div>
+    <!-- Manhwa 1 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/solo.jpg" alt="Solo Leveling" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Solo Leveling</p>
     </div>
+
+    <!-- Manhwa 2 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/orv.jpg" alt="Omniscient Reader" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Omniscient Reader</p>
+    </div>
+
+    <!-- Manhwa 3 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/estate.jpg" alt="The Great Mage" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">The Great Mage</p>
+    </div>
+
+    <!-- Manhwa 4 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Coming Soon" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Coming Soon</p>
+    </div>
+
+    <!-- Manhwa 5 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Reaper of the Drifting Moon" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Reaper of the Drifting Moon</p>
+    </div>
+
+    <!-- Manhwa 6 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Nano Machine" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Nano Machine</p>
+    </div>
+
+    <!-- Manhwa 7 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Damn Reincarnation" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Damn Reincarnation</p>
+    </div>
+
+    <!-- Manhwa 8 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="The World After the Fall" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">The World After the Fall</p>
+    </div>
+
+    <!-- Manhwa 9 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Return of the Mount Hua Sect" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Return of the Mount Hua Sect</p>
+    </div>
+
+    <!-- Manhwa 10 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Legend of the Northern Blade" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Legend of the Northern Blade</p>
+    </div>
+
+    <!-- Manhwa 11 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="SSS-Class Suicide Hunter" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">SSS-Class Suicide Hunter</p>
+    </div>
+
+    <!-- Manhwa 12 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Overgeared" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Overgeared</p>
+    </div>
+
+    <!-- Manhwa 13 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Murim Login" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Murim Login</p>
+    </div>
+
+    <!-- Manhwa 14 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="The Max Level Hero" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">The Max Level Hero</p>
+    </div>
+
+    <!-- Manhwa 15 -->
+    <div class="bg-[#111827] p-2 rounded-lg">
+      <img src="images/comingsoon.jpg" alt="Heavenly Demon Reborn!" class="w-full h-40 object-cover rounded">
+      <p class="mt-2 text-[#14a3c7] font-semibold">Heavenly Demon Reborn!</p>
+    </div>
+
   </div>
-
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>LATEST WEBTOON UPDATES</h1>
-    <p>Read trending Korean manhwa for free — mobile optimized</p>
-  </div>
-
-  <!-- Comic Grid -->
-  <div class="comic-grid">
-    <div class="comic-card">
-      <img src="solo.jpg" alt="Solo Leveling">
-      <p>Solo Leveling</p>
-    </div>
-    <div class="comic-card">
-      <img src="orv.jpg" alt="ORV">
-      <p>Omniscient Reader</p>
-    </div>
-    <div class="comic-card">
-      <img src="estate.jpg" alt="Estate">
-      <p>The Great Mage</p>
-    </div>
-    <div class="comic-card">
-      <img src="comingsoon.jpg" alt="Coming Soon">
-      <p>Coming Soon</p>
-    </div>
-  </div>
-
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <button onclick="alert('Sign in')">Sign in</button>
-    <button onclick="alert('Sign up')">Sign up</button>
-    <ul>
-      <li>HOME</li>
-      <li>WEBTOONS</li>
-      <li>BLOG</li>
-      <li>DONATE</li>
-    </ul>
-  </div>
-
-  <script>
-    function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("show");
-    }
-  </script>
-</body>
-</html>
+</section>
+<!-- Comic Grid Section End -->
